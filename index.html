@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>10В поздравляет с 8 Марта</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(120deg,#ff9ecb,#ffd6ec,#ffeaf6);
+text-align:center;
+overflow-x:hidden;
+}
+
+header{
+padding:60px 20px;
+color:white;
+background:linear-gradient(135deg,#ff4fa3,#ff7bc2);
+}
+
+header h1{
+font-size:48px;
+}
+
+header p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+}
+
+.section{
+padding:60px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+text-decoration:none;
+color:#333;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.05);
+}
+
+.card h3{
+color:#ff4fa3;
+}
+
+.flower{
+position:fixed;
+top:-20px;
+font-size:22px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{transform:translateY(-10vh)}
+100%{transform:translateY(110vh)}
+}
+
+footer{
+margin-top:50px;
+padding:20px;
+background:#ff4fa3;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌷 С 8 Марта, прекрасные девушки 10В 🌷</h1>
+
+<p>
+Этот небольшой сайт создан специально для вас.  
+Вы делаете наш класс ярче, веселее и добрее.  
+Спасибо за ваши улыбки, поддержку, дружбу и атмосферу, которую вы создаете.
+</p>
+
+</header>
+
+<section class="section">
+
+<h2>Нажмите на имя чтобы открыть поздравление 💖</h2>
+
+<div class="grid">
+
+<a class="card" href="girl.html?name=yasmin_d"><h3>Доспанова Ясмин</h3></a>
+<a class="card" href="girl.html?name=daria"><h3>Ергазина Дария</h3></a>
+<a class="card" href="girl.html?name=ayaulym"><h3>Жетибаева Аяулым</h3></a>
+<a class="card" href="girl.html?name=aiganym"><h3>Сейткали Айганым</h3></a>
+<a class="card" href="girl.html?name=saina"><h3>Кенесова Саина</h3></a>
+<a class="card" href="girl.html?name=aizere"><h3>Кадыргажы Айзере</h3></a>
+<a class="card" href="girl.html?name=kamilla"><h3>Калмыкова Камилла</h3></a>
+<a class="card" href="girl.html?name=kamila"><h3>Калиева Камила</h3></a>
+<a class="card" href="girl.html?name=katya"><h3>Охроменко Екатерина</h3></a>
+<a class="card" href="girl.html?name=lilia"><h3>Меньшаева Лилия</h3></a>
+<a class="card" href="girl.html?name=kristina"><h3>Савчук Кристина</h3></a>
+<a class="card" href="girl.html?name=zamira"><h3>Смагул Замира</h3></a>
+<a class="card" href="girl.html?name=polina"><h3>Марталер Полина</h3></a>
+<a class="card" href="girl.html?name=yasmin_h"><h3>Халитова Ясмин</h3></a>
+<a class="card" href="girl.html?name=adelia"><h3>Тхак Аделия</h3></a>
+
+</div>
+
+</section>
+
+<footer>
+С любовью от одноклассников ❤️
+</footer>
+
+<script>
+
+for(let i=0;i<30;i++){
+let f=document.createElement("div")
+f.className="flower"
+f.innerHTML="🌸"
+f.style.left=Math.random()*100+"%"
+f.style.animationDuration=(5+Math.random()*5)+"s"
+document.body.appendChild(f)
+}
+
+</script>
+
+</body>
+</html>
